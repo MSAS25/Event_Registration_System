@@ -1,0 +1,13 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<h1>Events List</h1>
+<ul>
+    {% for event in events %}
+        <li>
+            {{ event.name }} - {{ event.date }} ({{ event.max_participants }} seats)
+            <a href="{% url 'book_event' event.id %}">Book</a>
+        </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'homepage' %}">Back to Homepage</a>

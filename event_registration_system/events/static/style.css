@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1em;
+}
+
+form, ul {
+    max-width: 600px;
+    margin: 1em auto;
+    padding: 1em;
+    background: #fff;
+    border-radius: 8px;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0.5em;
+}

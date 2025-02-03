@@ -1,0 +1,15 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<h1>Create an Event</h1>
+<form method="POST">
+    {% csrf_token %}
+    <label for="name">Event Name:</label>
+    <input type="text" name="name" required>
+    <label for="date">Event Date and Time:</label>
+    <input type="datetime-local" name="date" required>
+    <label for="max_participants">Max Participants:</label>
+    <input type="number" name="max_participants" required>
+    <button type="submit">Create</button>
+</form>
+<a href="{% url 'homepage' %}">Back to Homepage</a>

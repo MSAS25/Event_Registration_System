@@ -1,0 +1,11 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<h1>Book a Seat for {{ event.name }}</h1>
+<form method="POST">
+    {% csrf_token %}
+    <label for="email">Your Email:</label>
+    <input type="email" name="email" required>
+    <button type="submit">Book</button>
+</form>
+<a href="{% url 'event_list' %}">Back to Events</a>
