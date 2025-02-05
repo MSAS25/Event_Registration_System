@@ -1,5 +1,62 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
+<style>
+    /* Tokyo Night Theme */
+    body {
+        background-color: #1a1b26;
+        color: #c0caf5;
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+    h1 {
+        color: #bb9af7;
+    }
+    form {
+        background-color: #24283b;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #414868;
+        background-color: #1a1b26;
+        color: #c0caf5;
+        border-radius: 4px;
+    }
+    button {
+        background-color: #7aa2f7;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background 0.3s;
+    }
+    button:hover {
+        background-color: #bb9af7;
+    }
+    a {
+        color: #7dcfff;
+        margin-top: 10px;
+        display: inline-block;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
 
 <h1>Book a Seat for {{ event.name }}</h1>
 <form method="POST">
